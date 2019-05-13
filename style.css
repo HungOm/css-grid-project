@@ -1,8 +1,8 @@
 .zone {
     padding:30px 50px;
-    margin:40px 60px;
+    /* margin:40px 60px;  */
     cursor:pointer;
-    display:inline-block;
+    /* display:inline-block; */
     color:#FFF;
     font-size:2em;
     border-radius:4px;
@@ -15,6 +15,63 @@
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+
+
+.container{
+    display:grid;
+    /* grid-template-columns:repeat(auto-fill,minmax(200px,1fr)) ; */
+    grid-template-columns:repeat(auto-fill,1fr);
+    grid-template-rows:1fr;
+    margin-top:-8px;
+    /* grid-gap:1px; */
+}
+.green{
+    grid-column: 1/-1;
+    display: grid;
+    /* grid-column: 1; */
+    grid-template-columns:repeat(12,1fr);    
+}
+
+.green p{
+display: inherit;
+grid-column-start: 1;
+grid-column-end: 5;
+}
+.brand{
+    
+    /* grid-template-columns:repeat(12,1fr); */
+    /* align-self: center; */
+    grid-column:12;
+    /* grid-column-end: 12; */
+    /* grid-row:center; */
+    /* display: grid; */
+    align-self: center;
+    justify-content: end;
+    margin-right:-40px;
+    
+}
+.nav{
+    /* grid-column: 1; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-flow:row;
+    justify-content: space-between;
+    /* background:blue; */
+
+}
+
+.red{
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr)) ;
+    /* grid-template-rows:repeat(auto-fill,minmax(200px,1fr)) ; */
+    height: 400px;;
+
+}
+.cover{
+    /* grid-column-start: 6; */
+    align-self: center;
 }
 
 /***********************************************************************
