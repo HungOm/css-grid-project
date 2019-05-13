@@ -74,6 +74,10 @@ grid-column-end: 5;
     align-self: center;
 }
 
+.blue{
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr)) ;
+}
+
 /***********************************************************************
  *  Green Background
  **********************************************************************/
